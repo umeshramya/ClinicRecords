@@ -1,0 +1,94 @@
+Private Sub CmdOldPatient_Click()
+On Error GoTo trap
+
+Dim curSearch As New Search_Class
+Dim Firstname As String
+Dim Middelename As String
+Dim LastName As String
+Dim Sex As String
+Dim ClauseString As String
+
+
+Firstname = Trim(txtFirstName.Text)
+MiddleName = Trim(txtMiddleName.Text)
+LastName = Trim(TxtLastName.Text)
+Sex = lisSex.Text
+
+
+MsgBox Sex
+curSearch.add_Sql_collection "Patient_details.First_Name", "Like", "'" & Firstname & "%'"
+curSearch.add_Sql_collection "Patient_details.Middle_Name", "Like", "'" & MiddleName & "%'"
+curSearch.add_Sql_collection "Patient_details.Last_name", "Like", "'" & LastName & "%'"
+curSearch.add_Sql_collection "Patient_details.Sex", "Like", "'" & Sex & "%'"
+curSearch.add_Sql_collection "Patient_details.Date_Of_Birth", ">", "#" & birth & "#"
+
+
+ClauseString = curSearch.GenerateClause
+
+
+strSql = "SELECT Patient_details.Patient_Id, Patient_details.First_Name, Patient_details.Middle_Name, " & _
+        "Patient_details.Last_name, Patient_details.Date_Of_Birth, " & _
+        "Patient_details.Sex, Patient_details.Date_Of_Registretion, " & _
+        "Patient_details.Referring_Doctor,Patient_details.User_Name " & _
+            "From Patient_details " & _
+                "WHERE (" & ClauseString & "); "
+
+GridPatientRecords.Refresh
+
+With CurRecordset
+If .State = adStateOpen Then
+.Close
+End If
+
+.CursorLocation = adUseClient
+.Open strSql, CnnMain, adOpenKeyset, adLockPessimistic, adCmdTex
+Set GridPatientRecords.DataSource = CurRecordset
+
+GridPatientRecords.Refresh
+
+End With
+
+Exit Sub
+trap:
+MsgBox Err.Description
+End Sub
+
+
+
+
+
+____________________________________________________________________________________________________________________________________________________
+
+
+'code for class Search_Class
+
+Dim Datatable As New Collection
+Dim dataOperator As New Collection
+Dim InputVariable As New Collection
+
+'add data variable to these collections
+Public Function add_Sql_collection(strtable As Variant, strOperator As Variant, strInputVariable As Variant)
+
+Datatable.Add strtable
+dataOperator.Add strOperator
+InputVariable.Add strInputVariable
+End Function
+
+
+
+'generate clause string from here
+Function GenerateClause() As String
+
+Dim collcount As Integer
+Dim StrRunClause As String
+collcount = Datatable.Count
+For i = 1 To collcount
+
+StrRunClause = StrRunClause & "((" & Datatable.Item(i) & ") " & dataOperator.Item(i) & " " & InputVariable.Item(i) & ")"
+If Not i = collcount Then
+StrRunClause = StrRunClause & " And "
+End If
+
+Next
+GenerateClause = StrRunClause
+End Function

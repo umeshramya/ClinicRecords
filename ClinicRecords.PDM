@@ -1,0 +1,179 @@
+[Root]
+Most Recent Package=Standard Setup Package 1
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=f:\ClinicRecord_Package\ClinicRecord_package_2.0.6
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+clincrecordsSecurity.mdw=F:\DR Umesh\clinicrecords\clincrecordsSecurity.mdw
+
+[Package|Standard Setup Package 1|Files Released]
+clinicrecords.mdb=
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+C:\WINDOWS\system32\msstdfmt.dll=
+C:\Documents and Settings\user\My Documents\Downloads\MSCOMM32.OCX=
+C:\WINDOWS\system32\ErezPP1LTR.ocx=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\Comdlg32.ocx=
+C:\WINDOWS\system32\RichTx32.ocx=
+C:\WINDOWS\system32\msadodc.ocx=
+C:\WINDOWS\system32\scrrun.dll=
+C:\WINDOWS\system32\MSWINSCK.OCX=
+C:\WINDOWS\system32\MSCAL.OCX=
+C:\WINDOWS\system32\MSFLXGRD.OCX=
+C:\WINDOWS\system32\mscomct2.ocx=
+
+[Package|Standard Setup Package 1|Files Added]
+clincrecordssecurity.mdw=
+f:\dr umesh\clinicrecords\clinicrecords.mdb=
+
+[Package|Standard Setup Package 1|Files Removed]
+
+[Package|Standard Setup Package 1|Files In Project]
+C:\WINDOWS\system32\MSVBVM60.DLL=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\MSBIND.DLL=Yes
+C:\WINDOWS\system32\msstdfmt.dll=Yes
+C:\WINDOWS\system32\scrrun.dll=Yes
+C:\WINDOWS\system32\msvcrt.dll=Yes
+C:\WINDOWS\system32\DBGRID32.OCX=Yes
+C:\WINDOWS\system32\DBLIST32.OCX=Yes
+C:\WINDOWS\system32\msadodc.ocx=Yes
+C:\WINDOWS\system32\MSDATGRD.OCX=Yes
+C:\WINDOWS\system32\MSDATLST.OCX=Yes
+C:\WINDOWS\system32\RichTx32.ocx=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+C:\WINDOWS\system32\Comdlg32.ocx=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\WINDOWS\system32\MSCOMM32.OCX=Yes
+C:\WINDOWS\system32\ErezPP1LTR.ocx=Yes
+C:\WINDOWS\system32\MSCOMCT2.OCX=Yes
+F:\DR Umesh\clinicrecords\ClinicRecords.exe=Yes
+F:\DR Umesh\clinicrecords\clincrecordsSecurity.mdw=Yes
+F:\DR Umesh\clinicrecords\ClinicRecords.mdb=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+E:\clinicrecords1\ClinicRecords1.0.exe=$(AppPath)
+C:\WINDOWS\system32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSBIND.DLL=$(WinSysPath)
+C:\WINDOWS\system32\msstdfmt.dll=$(WinSysPath)
+C:\WINDOWS\system32\scrrun.dll=$(WinSysPath)
+C:\WINDOWS\system32\msvcrt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\DBGRID32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\DBLIST32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\msadodc.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSDATGRD.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSDATLST.OCX=$(WinSysPath)
+C:\WINDOWS\system32\RichTx32.ocx=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\Comdlg32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMM32.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Documents and Settings\venkatesh\Desktop\DR Umesh\ClinicRecords.exe=$(AppPath)
+C:\WINDOWS\system32\MSWINSCK.OCX=$(WinSysPath)
+E:\clinicrecords1\ClinicRecords.exe=$(AppPath)
+E:\clinicrecords1\clincrecordsSecurity.mdw=$(AppPath)
+E:\clinicrecords1\ClinicRecords.mdb=$(AppPath)
+C:\Documents and Settings\user\Desktop\clinicrecords1\ClinicRecords.exe=$(AppPath)
+C:\Documents and Settings\user\My Documents\Downloads\MSCOMM32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSHFLXGD.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSFLXGRD.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCAL.OCX=$(WinSysPath)
+C:\Documents and Settings\user\Desktop\clinicrecords1\clincrecordsSecurity.mdw=$(AppPath)
+C:\Documents and Settings\user\Desktop\clinicrecords1\ClinicRecords.mdb=$(AppPath)
+C:\Documents and Settings\user\Desktop\New Folder (2)\clinicrecords1\ClinicRecords\ClinicRecords.exe=$(AppPath)
+C:\WINDOWS\system32\ErezPP1LTR.ocx=$(WinSysPath)
+C:\Documents and Settings\user\Desktop\New Folder (2)\clinicrecords1\ClinicRecords\clincrecordsSecurity.mdw=$(AppPath)
+C:\Documents and Settings\user\Desktop\New Folder (2)\clinicrecords1\ClinicRecords\ClinicRecords.mdb=$(AppPath)
+C:\Documents and Settings\user\Desktop\New Folder (2)\clinicrecords1\ClinicRecords.exe=$(AppPath)
+C:\Documents and Settings\user\Desktop\New Folder (2)\clinicrecords1\ClinicRecords.mdb=$(AppPath)
+F:\F files\clinicrecords1\ClinicRecords.exe=$(AppPath)
+C:\WINDOWS\system32\MSCOMCT2.OCX=$(WinSysPath)
+F:\F files\clinicrecords1\clincrecordsSecurity.mdw=$(AppPath)
+F:\F files\clinicrecords1\ClinicRecords.mdb=$(AppPath)
+F:\DR Umesh\clinicrecords\ClinicRecords.exe=$(AppPath)
+F:\DR Umesh\clinicrecords\clincrecordsSecurity.mdw=$(AppPath)
+F:\DR Umesh\clinicrecords\ClinicRecords.mdb=$(AppPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+E:\clinicrecords1\ClinicRecords1.0.exe=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Documents and Settings\venkatesh\Desktop\DR Umesh\ClinicRecords.exe=No
+E:\clinicrecords1\ClinicRecords.exe=No
+E:\clinicrecords1\clincrecordsSecurity.mdw=No
+E:\clinicrecords1\ClinicRecords.mdb=No
+C:\Documents and Settings\user\Desktop\clinicrecords1\ClinicRecords.exe=No
+C:\Documents and Settings\user\Desktop\clinicrecords1\clincrecordsSecurity.mdw=No
+C:\Documents and Settings\user\Desktop\clinicrecords1\ClinicRecords.mdb=No
+C:\Documents and Settings\user\Desktop\New Folder (2)\clinicrecords1\ClinicRecords\ClinicRecords.exe=No
+C:\Documents and Settings\user\Desktop\New Folder (2)\clinicrecords1\ClinicRecords\clincrecordsSecurity.mdw=No
+C:\Documents and Settings\user\Desktop\New Folder (2)\clinicrecords1\ClinicRecords\ClinicRecords.mdb=No
+C:\Documents and Settings\user\Desktop\New Folder (2)\clinicrecords1\ClinicRecords.exe=No
+C:\Documents and Settings\user\Desktop\New Folder (2)\clinicrecords1\ClinicRecords.mdb=No
+F:\F files\clinicrecords1\ClinicRecords.exe=No
+F:\F files\clinicrecords1\clincrecordsSecurity.mdw=No
+F:\F files\clinicrecords1\ClinicRecords.mdb=No
+F:\DR Umesh\clinicrecords\ClinicRecords.exe=Yes
+F:\DR Umesh\clinicrecords\clincrecordsSecurity.mdw=Yes
+F:\DR Umesh\clinicrecords\ClinicRecords.mdb=Yes
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=ClinicRecords 2.0.6
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=Clinic_Records
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|Clinic_Records]
+Icon1=ClinicRecords.exe
+Title1=Clinic_Records1.1.5
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=f:\ClinicRecord_Package\ClinicRecord_package_2.0.6
+ProjectFolder=F:\DR Umesh\clinicrecords
+ServerSideCab=
+File1=f:\ClinicRecord_Package\ClinicRecord_package_2.0.6\setup.exe
+File2=f:\ClinicRecord_Package\ClinicRecord_package_2.0.6\Setup.Lst
+File3=f:\ClinicRecord_Package\ClinicRecord_package_2.0.6\ClinicRecords.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
